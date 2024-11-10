@@ -1,38 +1,29 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AppLayout from "./components/AppLayout";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import PageNotFound from "./components/PageNotFound";
+
 function App() {
-  const variants = {
-    hiddenLeft: { opacity: 0, x: -50 },
-    hiddenRight: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0 },
-  };
-
-  return (
-    <>
-      <p>dummy content</p>
-      <div>
-        <motion.div
-          variants={variants}
-          initial="hiddenLeft"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          123
-        </motion.div>
-
-        <motion.div
-          variants={variants}
-          initial="hiddenRight"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          456
-        </motion.div>
-      </div>
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        { path: "/", element: <Portfolio /> },
+        { path: "/contact", element: <Contact /> },
+        { path: "/projects", element: <Projects /> },
+        { path: "/about", element: <About /> },
+      ],
+    },
+    {
+      path: "*",
+      element: <PageNotFound />,
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
