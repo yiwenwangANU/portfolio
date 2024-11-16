@@ -32,7 +32,7 @@ function Skills() {
   border-yellow-500
 */
   return (
-    <div className="text-white px-32 py-20">
+    <div className="text-white px-40 py-20">
       <div className="text-2xl font-bold">Skills</div>
       <div className="flex flex-row flex-wrap gap-3 py-5">
         {skills.map((item, index) => {

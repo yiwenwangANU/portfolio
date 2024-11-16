@@ -2,7 +2,7 @@ import Button from "./Button";
 
 function FrontPage() {
   return (
-    <div className="bg-[url('code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white px-32 py-32">
+    <div className="bg-[url('code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white px-40 py-40">
       <h1 className=" text-7xl font-bold">
         Hi !
         <br /> I am Yiwen Wang

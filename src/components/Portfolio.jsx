@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import FrontPage from "./FrontPage";
 import Skills from "./Skills";
+import WorkExperience from "./WorkExperience";
 
 const variants = {
   hiddenLeft: { opacity: 0, x: -50 },
@@ -13,6 +14,7 @@ function Portfolio() {
     <div>
       <FrontPage />
       <Skills />
+      <WorkExperience />
       <div>
         <motion.div
           variants={variants}
