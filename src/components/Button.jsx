@@ -10,7 +10,7 @@ function Button({ variation = "primary", size = "medium", children }) {
   };
   return (
     <motion.button
-      className="inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-purple-950 to-indigo-700 group-hover:from-purple-950 group-hover:to-indigo-700 text-white focus:ring-1 focus:outline-none focus:ring-purple-950"
+      className="inline-flex items-center justify-center p-0.5 me-2 overflow-hidden font-medium rounded-lg group bg-gradient-to-br from-purple-950 to-indigo-700 group-hover:from-purple-950 group-hover:to-indigo-700 text-white focus:ring-1 focus:outline-none focus:ring-purple-950"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >

@@ -32,15 +32,15 @@ function Skills() {
   border-yellow-500
 */
   return (
-    <div className="text-white px-40 py-20">
-      <div className="text-2xl font-bold">Skills</div>
-      <div className="flex flex-row flex-wrap gap-3 py-5">
+    <div className="text-white px-72 py-20">
+      <div className="text-5xl font-bold">Skills</div>
+      <div className="flex flex-row flex-wrap gap-4 py-8">
         {skills.map((item, index) => {
           const color = colors[index % colors.length];
           return (
             <span
               key={item}
-              className={`px-2 py-1 border-2 border-${color} rounded-2xl text-sm`}
+              className={`px-3 py-1 border-2 border-${color} rounded-3xl text-lg`}
             >
               {item}
             </span>
