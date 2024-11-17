@@ -6,6 +6,24 @@ const projectsInfo = [
     title: "Wild Oasis - Admin Backend",
     description:
       "The Wild Oasis is one hotel management web app, which enables employees to manage cabins, bookings, and guest information efficiently.",
+    tabs: ["React", "Redux", "Supabase"],
+    url: "https://wild-oasis-v2-hr4ywrovh-yiwens-projects-7b8f585a.vercel.app",
+    gitUrl: "https://github.com/yiwenwangANU/wild-oasis-v2",
+  },
+  {
+    image: "wild-oasis-website.jpg",
+    title: "The Wild Oasis",
+    description:
+      "The Wild Oasis is a hotel booking app, that allows users to search and reserve accommodations with a user-friendly interface.",
+    tabs: ["Nextjs", "React", "Tailwind", "Supabase"],
+    url: "https://wild-oasis-website-taupe.vercel.app/",
+    gitUrl: "https://github.com/yiwenwangANU/wild-oasis-website",
+  },
+  {
+    image: "wild-oasis-admin.jpg",
+    title: "Wild Oasis - Admin Backend",
+    description:
+      "The Wild Oasis is one hotel management web app, which enables employees to manage cabins, bookings, and guest information efficiently.",
     tabs: ["React", "Tailwind", "Redux", "Supabase"],
     url: "https://wild-oasis-v2-hr4ywrovh-yiwens-projects-7b8f585a.vercel.app",
     gitUrl: "https://github.com/yiwenwangANU/wild-oasis-v2",
@@ -26,7 +44,7 @@ function Projects() {
         </a>{" "}
         for more.
       </div>
-      <div className="py-6">
+      <div className="py-6 flex flex-row gap-x-32 gap-y-20 flex-wrap">
         {projectsInfo.map((item) => (
           <ProjectCard
             image={item.image}
