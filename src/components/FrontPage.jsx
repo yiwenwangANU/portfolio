@@ -1,7 +1,14 @@
+import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import { motion } from "framer-motion";
 
 function FrontPage() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Yiwen Wang_CV.pdf";
+    link.download = "Yiwen Wang_CV.pdf";
+    link.click();
+  };
   return (
     <div className="bg-[url('/code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white px-72 py-40">
       <motion.h1
@@ -28,8 +35,12 @@ function FrontPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
       >
-        <Button variation="secondary">Hire me</Button>
-        <Button variation="secondary">Download resume</Button>
+        <NavLink to="/contact">
+          <Button variation="secondary">Hire me</Button>
+        </NavLink>
+        <Button variation="secondary" onClick={handleDownload}>
+          Download resume
+        </Button>
       </motion.div>
     </div>
   );
