@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-
+import { motion } from "framer-motion";
 const projectsInfo = [
   {
     image: "wild-oasis-admin.jpg",
@@ -32,8 +32,20 @@ const projectsInfo = [
 function Projects() {
   return (
     <div className="px-96 pt-20 text-white">
-      <div className="text-white text-4xl font-bold">Recent Projects</div>
-      <div className="text-gray-300 text-lg py-3">
+      <motion.div
+        className="text-white text-4xl font-bold"
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Recent Projects
+      </motion.div>
+      <motion.div
+        className="text-gray-300 text-lg py-3"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
         Here are some of the projects I&apos;ve worked on. Check out my{" "}
         <a
           href="https://github.com/yiwenwangANU/"
@@ -43,8 +55,13 @@ function Projects() {
           GitHub
         </a>{" "}
         for more.
-      </div>
-      <div className="py-6 flex flex-row gap-x-32 gap-y-20 flex-wrap">
+      </motion.div>
+      <motion.div
+        className="py-6 flex flex-row gap-x-32 gap-y-20 flex-wrap"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         {projectsInfo.map((item) => (
           <ProjectCard
             image={item.image}
@@ -56,7 +73,7 @@ function Projects() {
             key={item.title}
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

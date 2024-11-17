@@ -1,11 +1,16 @@
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
   return (
     <NavLink to={url || gitUrl}>
-      <div className="w-[450px] h-[500px] rounded-xl border border-white">
+      <motion.div
+        className="w-[450px] h-[500px] rounded-xl border border-white"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
         <img
           src={image}
           alt="Preview image not available"
@@ -39,7 +44,7 @@ function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
             </NavLink>
           </div>
         </div>
-      </div>
+      </motion.div>
     </NavLink>
   );
 }
