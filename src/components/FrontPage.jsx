@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function FrontPage() {
   return (
-    <div className="bg-[url('code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white px-72 py-40">
+    <div className="bg-[url('/code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white px-72 py-40">
       <motion.h1
         className=" text-9xl font-bold"
         initial={{ opacity: 0, x: -100 }}
