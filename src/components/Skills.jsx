@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Skills() {
   const skills = [
     "NextJS",
@@ -33,8 +35,20 @@ function Skills() {
 */
   return (
     <div className="text-white px-72 py-20">
-      <div className="text-5xl font-bold">Skills</div>
-      <div className="flex flex-row flex-wrap gap-4 py-8">
+      <motion.div
+        className="text-5xl font-bold"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        Skills
+      </motion.div>
+      <motion.div
+        className="flex flex-row flex-wrap gap-4 py-8"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
         {skills.map((item, index) => {
           const color = colors[index % colors.length];
           return (
@@ -46,7 +60,7 @@ function Skills() {
             </span>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 }

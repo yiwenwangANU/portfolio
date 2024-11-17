@@ -1,5 +1,6 @@
 import Button from "./Button";
 import { motion } from "framer-motion";
+
 function FrontPage() {
   return (
     <div className="bg-[url('code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white px-72 py-40">
