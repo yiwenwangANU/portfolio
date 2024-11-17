@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
   return (
-    <NavLink to={url}>
+    <NavLink to={url || gitUrl}>
       <div className="w-[450px] h-[500px] rounded-xl border border-white">
         <img
           src={image}
@@ -25,11 +25,13 @@ function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
             ))}
           </div>
           <div className="flex flex-row gap-4 justify-end items-center py-4">
-            <NavLink to={url}>
-              <button className="bg-slate-800 rounded-md px-3 py-2 hover:bg-slate-700">
-                <TbWorld className="w-5 h-5" />
-              </button>
-            </NavLink>
+            {url && (
+              <NavLink to={url}>
+                <button className="bg-slate-800 rounded-md px-3 py-2 hover:bg-slate-700">
+                  <TbWorld className="w-5 h-5" />
+                </button>
+              </NavLink>
+            )}
             <NavLink to={gitUrl}>
               <button className="bg-white text-slate-900 rounded-md px-3 py-2 hover:bg-slate-200">
                 <FaGithub className="w-5 h-5" />

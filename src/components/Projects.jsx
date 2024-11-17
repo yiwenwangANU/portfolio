@@ -15,18 +15,18 @@ const projectsInfo = [
     title: "The Wild Oasis",
     description:
       "The Wild Oasis is a hotel booking app, that allows users to search and reserve accommodations with a user-friendly interface.",
-    tabs: ["Nextjs", "React", "Tailwind", "Supabase"],
+    tabs: ["Nextjs", "React", "TailwindCSS", "Supabase"],
     url: "https://wild-oasis-website-taupe.vercel.app/",
     gitUrl: "https://github.com/yiwenwangANU/wild-oasis-website",
   },
   {
-    image: "wild-oasis-admin.jpg",
-    title: "Wild Oasis - Admin Backend",
+    image: "fast-pizza-co.jpg",
+    title: "Fast React Pizza Co.",
     description:
-      "The Wild Oasis is one hotel management web app, which enables employees to manage cabins, bookings, and guest information efficiently.",
-    tabs: ["React", "Tailwind", "Redux", "Supabase"],
-    url: "https://wild-oasis-v2-hr4ywrovh-yiwens-projects-7b8f585a.vercel.app",
-    gitUrl: "https://github.com/yiwenwangANU/wild-oasis-v2",
+      "Welcome to Fast React Pizza Co.! Our intuitive app is crafted to make your pizza ordering process effortless and enjoyable.",
+    tabs: ["React", "JavaScript", "TailwindCSS", "Redux"],
+    url: null,
+    gitUrl: "https://github.com/yiwenwangANU/Fast_React_Pizza_Co",
   },
 ];
 function Projects() {
@@ -34,7 +34,7 @@ function Projects() {
     <div className="px-96 pt-20 text-white">
       <div className="text-white text-4xl font-bold">Recent Projects</div>
       <div className="text-gray-300 text-lg py-3">
-        Here are some of the projects I&apos;ve worked on. Check out{" "}
+        Here are some of the projects I&apos;ve worked on. Check out my{" "}
         <a
           href="https://github.com/yiwenwangANU/"
           className="underline text-purple-500 hover:text-purple-400"
