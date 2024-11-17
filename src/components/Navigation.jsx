@@ -4,9 +4,9 @@ import Button from "./Button";
 
 function Navigation() {
   return (
-    <div className="px-32 py-2 font-semibold flex flex-row justify-between sticky top-0 rounded-xl text-gray-300 bg-neutral-900/50 z-10 backdrop-blur-md">
-      <NavLink to="/" className="w-6">
-        <HomeIcon className=" hover:text-slate-50 px-3 py-2 rounded-xl" />
+    <div className="px-72 py-2 font-semibold flex flex-row justify-between sticky top-0 rounded-xl text-gray-300 bg-neutral-900/50 z-10 backdrop-blur-md">
+      <NavLink to="/" className="hover:text-slate-50 px-3 py-2 rounded-xl">
+        <HomeIcon className="w-6 h-6 " />
       </NavLink>
       <div className="flex flex-row gap-16">
         <NavLink

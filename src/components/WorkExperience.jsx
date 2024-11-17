@@ -1,12 +1,34 @@
+import { motion } from "framer-motion";
+
 function WorkExperience() {
   return (
     <div className="text-white px-72">
-      <div className="text-5xl font-bold">Work Experience</div>
-      <div className="pt-1 text-gray-500 text-lg">
+      <motion.div
+        className="text-5xl font-bold"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        Work Experience
+      </motion.div>
+      <motion.div
+        className="pt-1 pb-3 text-gray-500 text-lg"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         Having more than 1 year and a half of experience building web
         applications.
-      </div>
-      <div className="pt-5 max-w-3xl">
+      </motion.div>
+      <motion.div
+        className="pt-5 max-w-3xl"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         <div className="text-3xl font-bold">Freelancer</div>
         <div className="py-1 text-gray-500 text-lg">
           Online -- Nov 2023 – Now
@@ -21,8 +43,14 @@ function WorkExperience() {
           </li>
         </ul>
         <hr className="h-px my-8 border-0 bg-gray-700" />
-      </div>
-      <div className="pt-4 max-w-3xl">
+      </motion.div>
+      <motion.div
+        className="pt-4 max-w-3xl"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         <div className="text-3xl font-bold">Operations Engineering Intern</div>
         <div className=" text-gray-500 text-lg">
           Ausmate Pty Ltd, Canberra, Australia -- Jun 2021 - Sep 2021
@@ -44,8 +72,14 @@ function WorkExperience() {
           </li>
         </ul>
         <hr className="h-px my-8 border-0 bg-gray-700" />
-      </div>
-      <div className="pt-4 max-w-3xl">
+      </motion.div>
+      <motion.div
+        className="pt-4 max-w-3xl"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         <div className="text-3xl font-bold">Web Development Intern</div>
         <div className=" text-gray-500 text-lg">
           CSIRO - Black Mountain Site, Canberra, Australia -- Feb 2019 - Oct
@@ -68,7 +102,7 @@ function WorkExperience() {
           </li>
         </ul>
         <hr className="h-px my-8 border-0 bg-gray-700" />
-      </div>
+      </motion.div>
     </div>
   );
 }
