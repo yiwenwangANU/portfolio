@@ -1,12 +1,12 @@
-import { HomeIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
-
+import "../styles.css";
+import { AiFillHome } from "react-icons/ai";
 function Navigation() {
   return (
-    <div className="px-72 py-2 font-semibold flex flex-row justify-between sticky top-0 rounded-xl text-gray-300 bg-neutral-900/50 z-10 backdrop-blur-md">
+    <div className="px-72 py-2 font-semibold flex flex-row justify-between sticky top-0 rounded-xl text-gray-300 bg-neutral-900/50 z-10 backdrop-blur-sm dot-pattern">
       <NavLink to="/" className="hover:text-slate-50 px-3 py-2 rounded-xl">
-        <HomeIcon className="w-6 h-6 " />
+        <AiFillHome className="w-6 h-6 " />
       </NavLink>
       <div className="flex flex-row gap-16">
         <NavLink
