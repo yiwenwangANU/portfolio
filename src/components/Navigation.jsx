@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function Navigation() {
   return (
-    <div className="px-32 py-2 font-semibold flex flex-row justify-between sticky top-0 rounded-xl text-gray-300 bg-neutral-900/50 z-10 backdrop-blur-md">
+    <div className="px-32 py-2 font-semibold flex flex-row justify-between sticky top-1 rounded-xl text-gray-300 bg-neutral-900/50 z-10 backdrop-blur-md">
       <NavLink to="/" className="w-6">
         <HomeIcon className=" hover:text-slate-50 px-3 py-2 rounded-xl" />
       </NavLink>

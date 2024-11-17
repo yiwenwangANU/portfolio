@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import FrontPage from "./FrontPage";
 import Skills from "./Skills";
 import WorkExperience from "./WorkExperience";
+import MachineLearning from "./MachineLearning";
 
 const variants = {
   hiddenLeft: { opacity: 0, x: -50 },
@@ -15,6 +16,7 @@ function Portfolio() {
       <FrontPage />
       <Skills />
       <WorkExperience />
+      <MachineLearning />
       <div>
         <motion.div
           variants={variants}
