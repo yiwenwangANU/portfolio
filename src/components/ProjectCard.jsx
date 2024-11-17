@@ -7,7 +7,7 @@ function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
   return (
     <NavLink to={url || gitUrl}>
       <motion.div
-        className="w-[450px] h-[500px] rounded-xl border border-white"
+        className="w-[450px] h-[500px] rounded-xl border-white border-2"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
