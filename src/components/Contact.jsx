@@ -37,7 +37,20 @@ function Contact() {
       >
         Contact Me
       </motion.div>
-      <div className="flex flex-row gap-x-10 gap-y-12 flex-wrap px-2 py-10">
+      <motion.div
+        className="text-gray-400 leading-5 px-1 py-4 text-lg"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        You can connect with me in any way you prefer.
+      </motion.div>
+      <motion.div
+        className="flex flex-row gap-x-10 gap-y-12 flex-wrap px-2 py-10"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         {contactInfo.map((item) => (
           <ContactCard
             title={item.title}
@@ -48,7 +61,7 @@ function Contact() {
             key={item.title}
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

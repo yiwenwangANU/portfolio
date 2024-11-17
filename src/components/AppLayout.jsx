@@ -12,7 +12,7 @@ function AppLayout() {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      <div className="bg-black">
+      <div className="bg-black min-h-screen">
         <Navigation />
         <Outlet />
         <Footer />
