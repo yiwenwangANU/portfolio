@@ -2,10 +2,12 @@ import Code from "./code";
 
 function About() {
   return (
-    <div className="2xl:px-96 xl:px-40 md:px-16 px-10 pt-20 text-white">
-      <div className="text-white text-4xl font-bold">About Me</div>
-      <div className="flex flex-row justify-between">
-        <div className="text-gray-400 text-xl leading-8 py-3 flex flex-col gap-14 w-2/3">
+    <div className="2xl:px-80 xl:px-40 md:px-16 px-10 pt-20 text-white">
+      <div className="text-white text-4xl font-bold flex justify-center lg:justify-start pb-6">
+        About Me
+      </div>
+      <div className="flex lg:flex-row flex-col justify-between items-center lg:gap-2 gap-6">
+        <div className="text-gray-400 text-xl leading-8 py-3 flex flex-col gap-14 lg:w-2/3">
           <p>
             Hello! I am{" "}
             <span className="text-white font-semibold">Yiwen Wang</span>.
@@ -36,7 +38,7 @@ function About() {
           <img
             src="photo.jpg"
             alt="photo.jpg"
-            className="rounded-full h-[420px] -translate-x-10"
+            className="rounded-full h-[420px] 2xl:-translate-x-10 xl:-translate-x-5 -translate-x-2"
           />
         </div>
       </div>
