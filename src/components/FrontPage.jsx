@@ -10,9 +10,9 @@ function FrontPage() {
     link.click();
   };
   return (
-    <div className="bg-[url('/code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white px-72 py-40">
+    <div className="bg-[url('/code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white xl:px-72 lg:px-44 md:px-16 px-10 py-40">
       <motion.h1
-        className=" text-9xl font-bold"
+        className="xl:text-8xl lg:text-7xl md:text-6xl text-6xl font-bold"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}

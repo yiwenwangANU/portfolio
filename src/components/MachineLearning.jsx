@@ -1,4 +1,3 @@
-import NeuralNetwork from "./NeuralNetwork ";
 import { motion } from "framer-motion";
 
 function MachineLearning() {
@@ -16,9 +15,7 @@ function MachineLearning() {
           Engineer.
         </motion.div>
       </div>
-      <div className="flex justify-center items-center">
-        <NeuralNetwork />
-      </div>
+      <div className="flex justify-center items-center"></div>
     </>
   );
 }
