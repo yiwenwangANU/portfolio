@@ -31,7 +31,7 @@ const projectsInfo = [
 ];
 function Projects() {
   return (
-    <div className="px-96 pt-20 text-white">
+    <div className="2xl:px-64 xl:px-40 md:px-16 px-10 pt-20 text-white">
       <motion.div
         className="text-white text-4xl font-bold"
         initial={{ opacity: 0, x: -100 }}
@@ -57,7 +57,7 @@ function Projects() {
         for more.
       </motion.div>
       <motion.div
-        className="py-6 flex flex-row gap-x-32 gap-y-20 flex-wrap"
+        className="py-6 flex flex-row 2xl:gap-x-32 xl:gap-x-16 gap-x-14 gap-y-20 flex-wrap"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}

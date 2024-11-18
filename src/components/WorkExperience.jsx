@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function WorkExperience() {
   return (
-    <div className="text-white px-72">
+    <div className="text-white xl:px-72 lg:px-44 md:px-16 px-10">
       <motion.div
         className="text-5xl font-bold"
         initial={{ opacity: 0, x: -100 }}

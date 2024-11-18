@@ -28,7 +28,7 @@ const contactInfo = [
 ];
 function Contact() {
   return (
-    <div className="px-96 pt-20 text-white">
+    <div className="2xl:px-64 xl:px-40 md:px-16 px-10 pt-20 text-white">
       <motion.div
         className="text-white text-4xl font-bold"
         initial={{ opacity: 0, x: -100 }}
@@ -46,7 +46,7 @@ function Contact() {
         You can connect with me in any way you prefer.
       </motion.div>
       <motion.div
-        className="flex flex-row gap-x-10 gap-y-12 flex-wrap px-2 py-10"
+        className="flex flex-row gap-x-8 gap-y-12 flex-wrap px-2 py-10"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}

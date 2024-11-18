@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactCard({ title, description, underline, icon, url }) {
   return (
-    <div className="w-[500px] h-24 rounded-xl border-white border-2">
+    <div className="2xl:w-[480px] xl:w-[450px] lg:w-[420px] w-[400px] h-24 rounded-xl border-white border-2">
       <div className="flex flex-row justify-between">
         <div className="font-bold text-xl px-4 py-3">{title}</div>
         <a href={url}>
