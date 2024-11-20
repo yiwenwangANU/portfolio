@@ -31,12 +31,12 @@ const projectsInfo = [
 ];
 function Projects() {
   return (
-    <div className="2xl:px-64 xl:px-40 md:px-16 px-10 pt-20 text-white">
+    <div className="2xl:px-64 xl:px-40 md:px-16 sm:px-10 px-5 pt-20 text-white">
       <motion.div
         className="text-white text-4xl font-bold"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         Recent Projects
       </motion.div>
@@ -44,7 +44,7 @@ function Projects() {
         className="text-gray-300 text-lg py-3"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         Here are some of the projects I&apos;ve worked on. Check out my{" "}
         <a
@@ -60,7 +60,7 @@ function Projects() {
         className="py-6 flex flex-row 2xl:gap-x-32 xl:gap-x-16 gap-x-14 gap-y-20 flex-wrap"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         {projectsInfo.map((item) => (
           <ProjectCard

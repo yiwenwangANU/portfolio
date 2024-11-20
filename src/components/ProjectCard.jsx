@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
   return (
     <NavLink to={url || gitUrl}>
-      {/* //sm:w-[450px] sm:h-[500px] */}
       <motion.div
-        className=" w-full h-fit rounded-xl border-white border-2"
+        className="sm:w-[450px] sm:h-[500px] w-full h-fit rounded-xl border-white border-2"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >

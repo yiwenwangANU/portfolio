@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 function WorkExperience() {
   return (
-    <div className="text-white xl:px-72 lg:px-44 md:px-16 px-10 overflow-hidden">
+    <div className="text-white xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 overflow-hidden">
       <motion.div
         className="text-5xl font-bold"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
         Work Experience
@@ -16,7 +16,7 @@ function WorkExperience() {
         className="pt-1 pb-3 text-gray-500 text-lg"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
         Having more than 1 year and a half of experience building web
@@ -26,7 +26,7 @@ function WorkExperience() {
         className="pt-5 max-w-3xl"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <div className="text-3xl font-bold">Freelancer</div>
@@ -48,7 +48,7 @@ function WorkExperience() {
         className="pt-4 max-w-3xl"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <div className="text-3xl font-bold">Operations Engineering Intern</div>
@@ -77,7 +77,7 @@ function WorkExperience() {
         className="pt-4 max-w-3xl"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <div className="text-3xl font-bold">Web Development Intern</div>

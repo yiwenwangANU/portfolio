@@ -8,7 +8,7 @@ function MachineLearning() {
           className="text-5xl font-bold max-w-4xl"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 2 }}
           viewport={{ once: true }}
         >
           Aside from being a full stack developer, I am also a machine learning

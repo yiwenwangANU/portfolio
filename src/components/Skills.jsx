@@ -34,12 +34,12 @@ function Skills() {
   border-yellow-500
 */
   return (
-    <div className="text-white xl:px-72 lg:px-44 md:px-16 px-10 py-20 overflow-hidden">
+    <div className="text-white xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 py-20 overflow-hidden">
       <motion.div
         className="text-5xl font-bold"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
         Skills
@@ -48,7 +48,7 @@ function Skills() {
         className="flex flex-row flex-wrap gap-4 py-8"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
         {skills.map((item, index) => {
