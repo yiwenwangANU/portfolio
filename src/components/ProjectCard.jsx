@@ -6,20 +6,23 @@ import { motion } from "framer-motion";
 function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
   return (
     <NavLink to={url || gitUrl}>
+      {/* //sm:w-[450px] sm:h-[500px] */}
       <motion.div
-        className="w-[450px] h-[500px] rounded-xl border-white border-2"
+        className=" w-full h-fit rounded-xl border-white border-2"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
         <img
           src={image}
           alt="Preview image not available"
-          className="w-full h-1/2 rounded-xl"
+          className="w-fit h-1/2 rounded-xl"
         />
         <div className="px-7 py-4">
           <div className="font-bold text-xl py-2">{title}</div>
-          <div className="text-gray-500 leading-5 py-1 h-20">{description}</div>
-          <div className="flex flex-row gap-2 pt-4">
+          <div className="text-gray-500 leading-5 py-1 min-h-20">
+            {description}
+          </div>
+          <div className="flex flex-row flex-wrap gap-2 pt-4">
             {tabs.map((item, index) => (
               <div
                 key={index}
