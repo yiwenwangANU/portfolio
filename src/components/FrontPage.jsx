@@ -10,7 +10,7 @@ function FrontPage() {
     link.click();
   };
   return (
-    <div className="bg-[url('/code-background-3.jpg')] bg-cover bg-center h-screen w-full text-white xl:px-72 lg:px-44 md:px-16 px-10 py-40">
+    <div className="overflow-hidden bg-[url('/code-background-3.jpg')] bg-cover bg-center h-screen w-full box-border text-white xl:px-72 lg:px-44 md:px-16 px-10 py-40">
       <motion.h1
         className="xl:text-8xl lg:text-7xl md:text-6xl text-6xl font-bold"
         initial={{ opacity: 0, x: -100 }}
@@ -20,15 +20,17 @@ function FrontPage() {
         Hi !
         <br /> I am Yiwen Wang
       </motion.h1>
+
       <motion.p
         className="text-gray-300 py-6 text-xl"
-        initial={{ opacity: 0, x: 150 }}
+        initial={{ opacity: 0, x: 0 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
       >
         Need a talented full-stack developer? Let me turn your ideas into
         reality.
       </motion.p>
+
       <motion.div
         className="flex flex-row gap-4"
         initial={{ opacity: 0, y: 50 }}
