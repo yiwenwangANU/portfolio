@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 function FrontPage() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Yiwen Wang_CV.pdf";
-    link.download = "Yiwen Wang_CV.pdf";
+    link.href = "/StevenWangResume.pdf";
+    link.download = "StevenWangResume.pdf";
     link.click();
   };
   return (
@@ -18,7 +18,7 @@ function FrontPage() {
         transition={{ duration: 0.5 }}
       >
         Hi !
-        <br /> I am Yiwen Wang
+        <br /> I am Steven Wang
       </motion.h1>
 
       <motion.p
