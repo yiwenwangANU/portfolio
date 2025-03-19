@@ -2,28 +2,47 @@ import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 const projectsInfo = [
   {
-    image: "wild-oasis-admin.jpg",
-    title: "Wild Oasis - Admin Backend",
+    image: "messagenode.jpg",
+    title: "Message Node",
     description:
-      "The Wild Oasis is one hotel management web app, which enables employees to manage cabins, bookings, and guest information efficiently.",
-    tabs: ["React", "Redux", "Supabase"],
-    url: "https://wild-oasis-v2-hr4ywrovh-yiwens-projects-7b8f585a.vercel.app",
-    gitUrl: "https://github.com/yiwenwangANU/wild-oasis-v2",
+      "Message node is community-driven platform inspired by Reddit. Registered users can create threads and comment. Visitors are welcome to browse and enjoy the content.",
+    tabs: [
+      "React",
+      "TailwindCSS",
+      "Nodejs",
+      "Express",
+      "REST API",
+      "JWT",
+      "AWS",
+      "ECS",
+      "MongoDB",
+    ],
+    url: "https://messagenode.vercel.app/",
+    gitUrl: "https://github.com/yiwenwangANU/rest_api_backend",
   },
   {
     image: "wild-oasis-website.jpg",
-    title: "The Wild Oasis",
+    title: "Wild Oasis - Public Site",
     description:
-      "The Wild Oasis is a hotel booking app, that allows users to search and reserve accommodations with a user-friendly interface.",
+      "Wild Oasis is a hotel booking app, allowing users to search and reserve accommodations with a user-friendly interface.",
     tabs: ["Nextjs", "React", "TailwindCSS", "Supabase"],
     url: "https://wild-oasis-website-taupe.vercel.app/",
     gitUrl: "https://github.com/yiwenwangANU/wild-oasis-website",
   },
   {
+    image: "wild-oasis-admin.jpg",
+    title: "Wild Oasis - Admin Panel",
+    description:
+      "The admin panel of Wild Oasis, providing clear interface to manage cabins, bookings, and guest information.",
+    tabs: ["React", "Redux", "Supabase"],
+    url: "https://wild-oasis-v2-hr4ywrovh-yiwens-projects-7b8f585a.vercel.app",
+    gitUrl: "https://github.com/yiwenwangANU/wild-oasis-v2",
+  },
+  {
     image: "fast-pizza-co.jpg",
     title: "Fast React Pizza Co.",
     description:
-      "Welcome to Fast React Pizza Co.! Our intuitive app is crafted to make your pizza ordering process effortless and enjoyable.",
+      "Welcome to Fast React Pizza Co.! This app is crafted to make pizza ordering process effortless and enjoyable.",
     tabs: ["React", "JavaScript", "TailwindCSS", "Redux"],
     url: null,
     gitUrl: "https://github.com/yiwenwangANU/Fast_React_Pizza_Co",

@@ -5,18 +5,21 @@ import { motion } from "framer-motion";
 
 function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
   return (
-    <NavLink to={url || gitUrl}>
+    <NavLink
+      to={url || gitUrl}
+      className="sm:w-5/12 sm:h-[550px] w-full h-fit relative"
+    >
       <motion.div
-        className="sm:w-[450px] sm:h-[500px] w-full h-fit rounded-xl border-white border-2"
+        className="rounded-xl border-white border-2 h-full"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
         <img
           src={image}
           alt="Preview image not available"
-          className="w-fit h-1/2 rounded-xl"
+          className="w-full h-2/5 rounded-xl"
         />
-        <div className="px-7 py-4">
+        <div className="px-7 py-4 flex flex-col">
           <div className="font-bold text-xl py-2">{title}</div>
           <div className="text-gray-500 leading-5 py-1 min-h-20">
             {description}
@@ -31,7 +34,7 @@ function ProjectCard({ image, title, description, tabs, url, gitUrl }) {
               </div>
             ))}
           </div>
-          <div className="flex flex-row gap-4 justify-end items-center py-4">
+          <div className="flex flex-row gap-4 justify-end items-center py-4 bottom-0 right-3 absolute">
             {url && (
               <NavLink to={url}>
                 <button className="bg-slate-800 rounded-md px-3 py-2 hover:bg-slate-700">
