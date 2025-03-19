@@ -7,16 +7,16 @@ const contactInfo = [
   {
     title: "Email",
     description: "Email me at",
-    underline: "wangyiwenau@gmail.com",
+    underline: "stevenwanggau@gmail.com",
     icon: <MdEmail />,
-    url: "mailto:wangyiwenau@gmail.com",
+    url: "mailto:stevenwanggau@gmail.com",
   },
   {
     title: "LinkedIn",
     description: "Connect with me on",
     underline: "LinkedIn",
     icon: <FaLinkedin />,
-    url: "https://www.linkedin.com/in/yiwenwangg/",
+    url: "https://www.linkedin.com/in/stevenwangg/",
   },
   {
     title: "Github",

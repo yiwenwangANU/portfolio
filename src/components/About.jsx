@@ -20,7 +20,7 @@ function About() {
             transition={{ duration: 1 }}
           >
             Hello! I am{" "}
-            <span className="text-white font-semibold">Yiwen Wang</span>.
+            <span className="text-white font-semibold">Steven Wang</span>.
             I&apos;m a developer passionate about continuous self-learning. My
             journey started with a foundation in <Code>HTML</Code>,{" "}
             <Code>CSS</Code>,<Code>JavaScript</Code>, <Code>SQL</Code>, and{" "}
