@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 function Skills() {
   const skills = [
     "NextJS",
-    "Javascript",
+    "JavaScript",
+    "TypeScript",
     "HTML5",
     "CSS3",
     "TailwindCSS",

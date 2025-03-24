@@ -28,8 +28,8 @@ function About() {
             at university. After graduating, I expanded into <Code>
               AWS
             </Code>, <Code>Kubernetes</Code>,<Code>MongoDB</Code>,{" "}
-            <Code>Node.js</Code>, <Code>Express</Code>, <Code>React</Code>, and{" "}
-            <Code>Next.js</Code> to build{" "}
+            <Code>Node.js</Code>, <Code>Express</Code>, <Code>React</Code>,
+            <Code>TypeScript</Code>, and <Code>Next.js</Code> to build{" "}
             <span className="text-white font-semibold">
               dynamic web applications
             </span>
