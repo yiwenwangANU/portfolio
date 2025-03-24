@@ -3,7 +3,7 @@ import { HiChevronDoubleDown, HiChevronDoubleRight } from "react-icons/hi";
 
 function MachineLearning() {
   return (
-    <div className="text-white xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 overflow-hidden">
+    <div className="text-white xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 overflow-hidden pt-10">
       <motion.div
         className="text-3xl font-bold max-w-4xl"
         initial={{ opacity: 0, x: -100 }}
@@ -24,7 +24,7 @@ function MachineLearning() {
       >
         I have experience in building the models including
       </motion.div>
-      <div className="flex flex-col gap-10 justify-center items-center mx-auto">
+      <div className="flex flex-col gap-10 justify-center mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,13 +64,13 @@ function MachineLearning() {
         >
           <div className="text-xl font-bold pb-3">Generative Model</div>
           <div className="flex sm:flex-row gap-9 items-center flex-col">
-            <img src="cat0.jpg" className="sm:w-1/4 rounded-lg" />
+            <img src="cat0.jpg" className="sm:w-1/3 rounded-lg" />
             <HiChevronDoubleRight className="hidden sm:block" />
             <HiChevronDoubleDown className="block sm:hidden" />
-            <img src="cat1.jpg" className="sm:w-1/4 rounded-lg" />
+            <img src="cat1.jpg" className="sm:w-1/3 rounded-lg" />
             <HiChevronDoubleRight className="hidden sm:block" />
             <HiChevronDoubleDown className="block sm:hidden" />
-            <img src="cat2.jpg" className="sm:w-1/4 rounded-lg" />
+            <img src="cat2.jpg" className="sm:w-1/3 rounded-lg" />
           </div>
         </motion.div>
       </div>

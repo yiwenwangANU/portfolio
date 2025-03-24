@@ -29,7 +29,7 @@ function WorkExperience() {
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <div className="text-3xl font-bold">Freelancer</div>
+        {/* <div className="text-3xl font-bold">Freelancer</div>
         <div className="py-1 text-gray-500 text-lg">
           Online -- Nov 2023 – Now
         </div>
@@ -42,7 +42,7 @@ function WorkExperience() {
             Provided content writing and copyediting for blogs and websites.
           </li>
         </ul>
-        <hr className="h-px my-8 border-0 bg-gray-700" />
+        <hr className="h-px my-8 border-0 bg-gray-700" /> */}
       </motion.div>
       <motion.div
         className="pt-4 max-w-3xl"
