@@ -48,7 +48,7 @@ const projectsInfo = [
     gitUrl: "https://github.com/yiwenwangANU/Fast_React_Pizza_Co",
   },
 ];
-const Projects = () => {
+const ProjectsPage = () => {
   return (
     <div className="2xl:px-64 xl:px-40 md:px-16 sm:px-10 px-5 pt-20 text-white">
       <motion.div
@@ -97,4 +97,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsPage;

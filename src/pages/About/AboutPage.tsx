@@ -1,7 +1,7 @@
 import Code from "./components/Code";
 import { motion } from "framer-motion";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div className="2xl:px-80 xl:px-40 md:px-16 px-10 pt-20 text-white">
       <motion.div
@@ -79,4 +79,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

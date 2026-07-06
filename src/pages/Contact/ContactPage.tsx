@@ -26,7 +26,7 @@ const contactInfo = [
     url: "https://github.com/yiwenwangANU",
   },
 ];
-const Contact = () => {
+const ContactPage = () => {
   return (
     <div className="2xl:px-64 xl:px-40 md:px-16 sm:px-10 px-5 pt-20 text-white">
       <motion.div
@@ -66,4 +66,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

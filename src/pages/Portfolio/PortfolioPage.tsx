@@ -3,7 +3,7 @@ import Skills from "./components/Skills";
 import WorkExperience from "./components/WorkExperience";
 import MachineLearning from "./components/MachineLearning";
 
-const Portfolio = () => {
+const PortfolioPage = () => {
   return (
     <div>
       <FrontPage />
@@ -14,4 +14,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default PortfolioPage;
