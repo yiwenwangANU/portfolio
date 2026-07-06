@@ -35,7 +35,7 @@ const Skills = () => {
   border-yellow-500
 */
   return (
-    <div className="text-white xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 py-20 overflow-hidden">
+    <div className="xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 py-20 overflow-hidden">
       <motion.div
         className="text-5xl font-bold"
         initial={{ opacity: 0, x: -100 }}

@@ -3,7 +3,7 @@ import { HiChevronDoubleDown, HiChevronDoubleRight } from "react-icons/hi";
 
 const MachineLearning = () => {
   return (
-    <div className="text-white xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 overflow-hidden pt-10">
+    <div className="xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 overflow-hidden pt-10">
       <motion.div
         className="text-3xl font-bold max-w-4xl"
         initial={{ opacity: 0, x: -100 }}

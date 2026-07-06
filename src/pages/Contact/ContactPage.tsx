@@ -28,9 +28,9 @@ const contactInfo = [
 ];
 const ContactPage = () => {
   return (
-    <div className="2xl:px-64 xl:px-40 md:px-16 sm:px-10 px-5 pt-20 text-white">
+    <div className="2xl:px-64 xl:px-40 md:px-16 sm:px-10 px-5 pt-20">
       <motion.div
-        className="text-white text-4xl font-bold"
+        className="text-4xl font-bold"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}

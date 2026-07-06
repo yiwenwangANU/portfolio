@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const AboutPage = () => {
   return (
-    <div className="2xl:px-80 xl:px-40 md:px-16 px-10 pt-20 text-white">
+    <div className="2xl:px-80 xl:px-40 md:px-16 px-10 pt-20">
       <motion.div
-        className="text-white text-4xl font-bold flex justify-center lg:justify-start pb-6"
+        className="text-4xl font-bold flex justify-center lg:justify-start pb-6"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -19,8 +19,7 @@ const AboutPage = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            Hello! I am{" "}
-            <span className="text-white font-semibold">Steven Wang</span>.
+            Hello! I am <span className="font-semibold">Steven Wang</span>.
             I&apos;m a developer passionate about continuous self-learning. My
             journey started with a foundation in <Code>HTML</Code>,{" "}
             <Code>CSS</Code>,<Code>JavaScript</Code>, <Code>SQL</Code>, and{" "}
@@ -30,10 +29,7 @@ const AboutPage = () => {
             </Code>, <Code>Kubernetes</Code>,<Code>MongoDB</Code>,{" "}
             <Code>Node.js</Code>, <Code>Express</Code>, <Code>React</Code>,
             <Code>TypeScript</Code>, and <Code>Next.js</Code> to build{" "}
-            <span className="text-white font-semibold">
-              dynamic web applications
-            </span>
-            .
+            <span className="font-semibold">dynamic web applications</span>.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: -100 }}
@@ -41,8 +37,8 @@ const AboutPage = () => {
             transition={{ duration: 1 }}
           >
             I&apos;m also keen on{" "}
-            <span className="text-white font-semibold">machine learning</span>.
-            I studied its theories and algorithms during my university years.
+            <span className="font-semibold">machine learning</span>. I studied
+            its theories and algorithms during my university years.
             Post-graduation, I applied this knowledge using models from{" "}
             <Code>scikit-learn</Code>, participated in Kaggle challenges, and
             learned <Code>TensorFlow</Code>, earning a certification.
@@ -67,7 +63,7 @@ const AboutPage = () => {
         >
           Through this continuous journey of learning and application, I strive
           to{" "}
-          <span className="text-white font-semibold">
+          <span className="font-semibold">
             blend my expertise in web development and machine learning
           </span>{" "}
           to contribute innovative solutions to complex problems. I&apos;m
