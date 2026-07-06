@@ -22,6 +22,15 @@ export default defineConfig([
       ],
     },
   },
+  {
+    files: [
+      "*.config.{js,mjs,cjs,ts}",
+      "vite.config.ts",
+      "commitlint.config.js",
+      "lint-staged.config.mjs",
+    ],
+    languageOptions: { globals: globals.node },
+  },
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat["jsx-runtime"],
