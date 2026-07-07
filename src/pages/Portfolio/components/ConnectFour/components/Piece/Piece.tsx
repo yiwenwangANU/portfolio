@@ -1,5 +1,3 @@
-import type { CSSProperties } from "react";
-
 interface Props {
   color: "red" | "yellow";
   row: number;
@@ -13,7 +11,7 @@ const Piece = ({ color, row, column }: Props) => {
     gridColumn: column + 1,
     "--row": row,
     "--drop-duration": `${250 + row * 60}ms`,
-  } as CSSProperties;
+  };
 
   return (
     <div
