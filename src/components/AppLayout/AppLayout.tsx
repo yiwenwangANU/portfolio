@@ -12,7 +12,7 @@ const AppLayout = () => {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      <div className="bg-black min-h-screen">
+      <div className="min-h-screen bg-black">
         <Navigation />
         <Outlet />
         <Footer />

@@ -50,7 +50,7 @@ const projectsInfo = [
 ];
 const ProjectsPage = () => {
   return (
-    <div className="2xl:px-64 xl:px-40 md:px-16 sm:px-10 px-5 pt-20">
+    <div className="px-5 pt-20 sm:px-10 md:px-16 xl:px-40 2xl:px-64">
       <motion.div
         className="text-4xl font-bold"
         initial={{ opacity: 0, x: -100 }}
@@ -60,7 +60,7 @@ const ProjectsPage = () => {
         Recent Projects
       </motion.div>
       <motion.div
-        className="text-gray-300 text-lg py-3"
+        className="py-3 text-lg text-gray-300"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -68,7 +68,7 @@ const ProjectsPage = () => {
         Here are some of the projects I&apos;ve worked on. Check out my{" "}
         <a
           href="https://github.com/yiwenwangANU/"
-          className="underline text-purple-500 hover:text-purple-400"
+          className="text-purple-500 underline hover:text-purple-400"
         >
           {" "}
           GitHub
@@ -76,7 +76,7 @@ const ProjectsPage = () => {
         for more.
       </motion.div>
       <motion.div
-        className="py-6 flex flex-row 2xl:gap-x-32 xl:gap-x-16 gap-x-14 gap-y-20 flex-wrap"
+        className="flex flex-row flex-wrap gap-x-14 gap-y-20 py-6 xl:gap-x-16 2xl:gap-x-32"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

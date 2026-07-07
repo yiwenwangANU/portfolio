@@ -15,7 +15,7 @@ const Piece = ({ color, row, column }: Props) => {
 
   return (
     <div
-      className={`piece-drop w-12 h-12 mx-2 my-1 border-2 border-black rounded-full ${colorClasses}`}
+      className={`piece-drop mx-2 my-1 h-12 w-12 rounded-full border-2 border-black ${colorClasses}`}
       style={style}
     ></div>
   );

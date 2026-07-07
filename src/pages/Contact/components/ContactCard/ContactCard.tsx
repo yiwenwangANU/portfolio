@@ -16,9 +16,9 @@ const ContactCard = ({
   url,
 }: ContactCardProps) => {
   return (
-    <div className="2xl:w-[480px] xl:w-[450px] lg:w-[420px] w-full h-24 rounded-xl border-white border-2">
+    <div className="h-24 w-full rounded-xl border-2 border-white lg:w-[420px] xl:w-[450px] 2xl:w-[480px]">
       <div className="flex flex-row justify-between">
-        <div className="font-bold text-xl px-4 py-3">{title}</div>
+        <div className="px-4 py-3 text-xl font-bold">{title}</div>
         <a href={url}>
           {React.cloneElement(icon, {
             className:
@@ -27,10 +27,10 @@ const ContactCard = ({
         </a>
       </div>
 
-      <span className="text-gray-400 leading-5 pl-4 pr-2 py-1">
+      <span className="py-1 pl-4 pr-2 leading-5 text-gray-400">
         {description}
       </span>
-      <a className="underline text-purple-500 hover:text-purple-400" href={url}>
+      <a className="text-purple-500 underline hover:text-purple-400" href={url}>
         {underline}
       </a>
     </div>

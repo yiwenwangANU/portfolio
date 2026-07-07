@@ -28,7 +28,7 @@ const contactInfo = [
 ];
 const ContactPage = () => {
   return (
-    <div className="2xl:px-64 xl:px-40 md:px-16 sm:px-10 px-5 pt-20">
+    <div className="px-5 pt-20 sm:px-10 md:px-16 xl:px-40 2xl:px-64">
       <motion.div
         className="text-4xl font-bold"
         initial={{ opacity: 0, x: -100 }}
@@ -38,7 +38,7 @@ const ContactPage = () => {
         Contact Me
       </motion.div>
       <motion.div
-        className="text-gray-400 leading-5 px-1 py-4 text-lg"
+        className="px-1 py-4 text-lg leading-5 text-gray-400"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -46,7 +46,7 @@ const ContactPage = () => {
         You can connect with me in any way you prefer.
       </motion.div>
       <motion.div
-        className="flex flex-row gap-x-8 gap-y-12 flex-wrap px-2 py-10"
+        className="flex flex-row flex-wrap gap-x-8 gap-y-12 px-2 py-10"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

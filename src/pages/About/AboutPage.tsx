@@ -3,17 +3,17 @@ import { motion } from "framer-motion";
 
 const AboutPage = () => {
   return (
-    <div className="2xl:px-80 xl:px-40 md:px-16 px-10 pt-20">
+    <div className="px-10 pt-20 md:px-16 xl:px-40 2xl:px-80">
       <motion.div
-        className="text-4xl font-bold flex justify-center lg:justify-start pb-6"
+        className="flex justify-center pb-6 text-4xl font-bold lg:justify-start"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         About Me
       </motion.div>
-      <div className="flex lg:flex-row flex-col justify-between items-center lg:gap-2 gap-6">
-        <div className="text-gray-400 text-xl leading-8 py-3 flex flex-col gap-14 lg:w-2/3">
+      <div className="flex flex-col items-center justify-between gap-6 lg:flex-row lg:gap-2">
+        <div className="flex flex-col gap-14 py-3 text-xl leading-8 text-gray-400 lg:w-2/3">
           <motion.p
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -48,14 +48,14 @@ const AboutPage = () => {
           <motion.img
             src="photo.jpg"
             alt="photo.jpg"
-            className="rounded-full h-[420px] 2xl:-translate-x-10 xl:-translate-x-5 -translate-x-2"
+            className="h-[420px] -translate-x-2 rounded-full xl:-translate-x-5 2xl:-translate-x-10"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           />
         </div>
       </div>
-      <div className="text-gray-400 text-xl leading-8 py-3">
+      <div className="py-3 text-xl leading-8 text-gray-400">
         <motion.p
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}

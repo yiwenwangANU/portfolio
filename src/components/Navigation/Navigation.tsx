@@ -4,22 +4,22 @@ import "@/styles.css";
 import { AiFillHome } from "react-icons/ai";
 const Navigation = () => {
   return (
-    <div className="xl:px-72 lg:px-44 md:px-16 px-2 py-2 font-semibold flex flex-row justify-between sticky top-0 rounded-xl text-gray-300 bg-neutral-900/50 z-10 backdrop-blur-sm dot-pattern">
-      <NavLink to="/" className="hover:text-slate-50 px-3 py-2 rounded-xl">
-        <AiFillHome className="w-6 h-6 " />
+    <div className="dot-pattern sticky top-0 z-10 flex flex-row justify-between rounded-xl bg-neutral-900/50 px-2 py-2 font-semibold text-gray-300 backdrop-blur-sm md:px-16 lg:px-44 xl:px-72">
+      <NavLink to="/" className="rounded-xl px-3 py-2 hover:text-slate-50">
+        <AiFillHome className="h-6 w-6" />
       </NavLink>
 
-      <NavLink to="/about" className="hover:text-slate-50 px-3 py-2 rounded-xl">
+      <NavLink to="/about" className="rounded-xl px-3 py-2 hover:text-slate-50">
         About
       </NavLink>
       <NavLink
         to="/projects"
-        className="hover:text-slate-50 px-3 py-2 rounded-xl"
+        className="rounded-xl px-3 py-2 hover:text-slate-50"
       >
         Projects
       </NavLink>
 
-      <NavLink to="/contact" className=" hover:text-slate-50">
+      <NavLink to="/contact" className="hover:text-slate-50">
         <Button size="small">Contact</Button>
       </NavLink>
     </div>

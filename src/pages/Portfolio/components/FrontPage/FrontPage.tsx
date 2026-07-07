@@ -10,9 +10,9 @@ const FrontPage = () => {
     link.click();
   };
   return (
-    <div className="overflow-hidden bg-[url('/code-background-3.jpg')] bg-cover bg-center h-screen w-full box-border xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 py-40">
+    <div className="box-border h-screen w-full overflow-hidden bg-[url('/code-background-3.jpg')] bg-cover bg-center px-5 py-40 sm:px-10 md:px-16 lg:px-44 xl:px-72">
       <motion.h1
-        className="xl:text-8xl lg:text-7xl md:text-6xl text-6xl font-bold"
+        className="text-6xl font-bold md:text-6xl lg:text-7xl xl:text-8xl"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -22,7 +22,7 @@ const FrontPage = () => {
       </motion.h1>
 
       <motion.p
-        className="text-gray-300 py-6 text-xl"
+        className="py-6 text-xl text-gray-300"
         initial={{ opacity: 0, x: 0 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const WorkExperience = () => {
   return (
-    <div className="xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 overflow-hidden">
+    <div className="overflow-hidden px-5 sm:px-10 md:px-16 lg:px-44 xl:px-72">
       <motion.div
         className="text-5xl font-bold"
         initial={{ opacity: 0, x: -100 }}
@@ -13,7 +13,7 @@ const WorkExperience = () => {
         Work Experience
       </motion.div>
       <motion.div
-        className="pt-1 pb-3 text-gray-500 text-lg"
+        className="pb-3 pt-1 text-lg text-gray-500"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -23,7 +23,7 @@ const WorkExperience = () => {
         applications.
       </motion.div>
       <motion.div
-        className="pt-5 max-w-3xl"
+        className="max-w-3xl pt-5"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -45,17 +45,17 @@ const WorkExperience = () => {
         <hr className="h-px my-8 border-0 bg-gray-700" /> */}
       </motion.div>
       <motion.div
-        className="pt-4 max-w-3xl"
+        className="max-w-3xl pt-4"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <div className="text-3xl font-bold">Operations Engineering Intern</div>
-        <div className=" text-gray-500 text-lg">
+        <div className="text-lg text-gray-500">
           Ausmate Pty Ltd, Canberra, Australia -- Jun 2021 - Sep 2021
         </div>
-        <ul className="pt-2 list-disc px-3 text-lg">
+        <ul className="list-disc px-3 pt-2 text-lg">
           <li>
             Website Development & Maintenance: Updated website content using
             HTML, CSS, and JavaScript, managed RDS database updates to ensure
@@ -71,21 +71,21 @@ const WorkExperience = () => {
             provider, testing, and site/database migration.
           </li>
         </ul>
-        <hr className="h-px my-8 border-0 bg-gray-700" />
+        <hr className="my-8 h-px border-0 bg-gray-700" />
       </motion.div>
       <motion.div
-        className="pt-4 max-w-3xl"
+        className="max-w-3xl pt-4"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <div className="text-3xl font-bold">Web Development Intern</div>
-        <div className=" text-gray-500 text-lg">
+        <div className="text-lg text-gray-500">
           CSIRO - Black Mountain Site, Canberra, Australia -- Feb 2019 - Oct
           2019
         </div>
-        <ul className="pt-2 list-disc px-3 text-lg">
+        <ul className="list-disc px-3 pt-2 text-lg">
           <li>
             Feature Development: Collaborating with a team to build and enhance
             a Django-based website, implementing new features and integrating
@@ -101,7 +101,7 @@ const WorkExperience = () => {
             consistency.
           </li>
         </ul>
-        <hr className="h-px my-8 border-0 bg-gray-700" />
+        <hr className="my-8 h-px border-0 bg-gray-700" />
       </motion.div>
     </div>
   );

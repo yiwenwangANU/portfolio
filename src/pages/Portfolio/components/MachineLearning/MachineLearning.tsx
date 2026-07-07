@@ -3,9 +3,9 @@ import { HiChevronDoubleDown, HiChevronDoubleRight } from "react-icons/hi";
 
 const MachineLearning = () => {
   return (
-    <div className="xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 overflow-hidden pt-10">
+    <div className="overflow-hidden px-5 pt-10 sm:px-10 md:px-16 lg:px-44 xl:px-72">
       <motion.div
-        className="text-3xl font-bold max-w-4xl"
+        className="max-w-4xl text-3xl font-bold"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
@@ -16,7 +16,7 @@ const MachineLearning = () => {
       </motion.div>
 
       <motion.div
-        className="pt-1 pb-3 text-gray-500 text-lg"
+        className="pb-3 pt-1 text-lg text-gray-500"
         initial={{ opacity: 0, x: 0 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -24,14 +24,14 @@ const MachineLearning = () => {
       >
         I have experience in building the models including
       </motion.div>
-      <div className="flex flex-col gap-10 justify-center mx-auto">
+      <div className="mx-auto flex flex-col justify-center gap-10">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <div className="text-xl font-bold pb-3">Computer Vision</div>
+          <div className="pb-3 text-xl font-bold">Computer Vision</div>
           <img src="object detection.jpg" className="rounded-lg" />
         </motion.div>
         <motion.div
@@ -40,11 +40,11 @@ const MachineLearning = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <div className="text-xl font-bold pb-3">
+          <div className="pb-3 text-xl font-bold">
             Natural Language Processing
           </div>
-          <div className="flex sm:flex-row gap-5 items-center flex-col">
-            <img src="tobeornottext.jpg" className="sm:w-3/5 rounded-lg" />
+          <div className="flex flex-col items-center gap-5 sm:flex-row">
+            <img src="tobeornottext.jpg" className="rounded-lg sm:w-3/5" />
             <HiChevronDoubleRight className="hidden sm:block" />
             <HiChevronDoubleDown className="block sm:hidden" />
             <div className="sm:w-2/5">
@@ -62,15 +62,15 @@ const MachineLearning = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <div className="text-xl font-bold pb-3">Generative Model</div>
-          <div className="flex sm:flex-row gap-9 items-center flex-col">
-            <img src="cat0.jpg" className="sm:w-1/3 rounded-lg" />
+          <div className="pb-3 text-xl font-bold">Generative Model</div>
+          <div className="flex flex-col items-center gap-9 sm:flex-row">
+            <img src="cat0.jpg" className="rounded-lg sm:w-1/3" />
             <HiChevronDoubleRight className="hidden sm:block" />
             <HiChevronDoubleDown className="block sm:hidden" />
-            <img src="cat1.jpg" className="sm:w-1/3 rounded-lg" />
+            <img src="cat1.jpg" className="rounded-lg sm:w-1/3" />
             <HiChevronDoubleRight className="hidden sm:block" />
             <HiChevronDoubleDown className="block sm:hidden" />
-            <img src="cat2.jpg" className="sm:w-1/3 rounded-lg" />
+            <img src="cat2.jpg" className="rounded-lg sm:w-1/3" />
           </div>
         </motion.div>
       </div>

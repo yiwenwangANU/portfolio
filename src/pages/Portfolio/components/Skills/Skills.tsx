@@ -35,7 +35,7 @@ const Skills = () => {
   border-yellow-500
 */
   return (
-    <div className="xl:px-72 lg:px-44 md:px-16 sm:px-10 px-5 py-20 overflow-hidden">
+    <div className="overflow-hidden px-5 py-20 sm:px-10 md:px-16 lg:px-44 xl:px-72">
       <motion.div
         className="text-5xl font-bold"
         initial={{ opacity: 0, x: -100 }}
@@ -57,7 +57,7 @@ const Skills = () => {
           return (
             <span
               key={item}
-              className={`px-3 py-1 border-2 border-${color} rounded-3xl text-lg`}
+              className={`border-2 px-3 py-1 border-${color} rounded-3xl text-lg`}
             >
               {item}
             </span>

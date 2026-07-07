@@ -24,44 +24,44 @@ const ProjectCard = ({
   return (
     <NavLink
       to={url || gitUrl}
-      className="sm:w-5/12 sm:h-[550px] w-full h-fit relative"
+      className="relative h-fit w-full sm:h-[550px] sm:w-5/12"
     >
       <motion.div
-        className="rounded-xl border-white border-2 h-full"
+        className="h-full rounded-xl border-2 border-white"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
         <img
           src={image}
           alt="Preview image not available"
-          className="w-full h-2/5 rounded-xl"
+          className="h-2/5 w-full rounded-xl"
         />
-        <div className="px-7 py-4 flex flex-col">
-          <div className="font-bold text-xl py-2">{title}</div>
-          <div className="text-gray-500 leading-5 py-1 min-h-20">
+        <div className="flex flex-col px-7 py-4">
+          <div className="py-2 text-xl font-bold">{title}</div>
+          <div className="min-h-20 py-1 leading-5 text-gray-500">
             {description}
           </div>
           <div className="flex flex-row flex-wrap gap-2 pt-4">
             {tabs.map((item, index) => (
               <div
                 key={index}
-                className="border border-purple-500 rounded-md px-2 py-0.5"
+                className="rounded-md border border-purple-500 px-2 py-0.5"
               >
                 {item}
               </div>
             ))}
           </div>
-          <div className="flex flex-row gap-4 justify-end items-center py-4 bottom-0 right-3 absolute">
+          <div className="absolute bottom-0 right-3 flex flex-row items-center justify-end gap-4 py-4">
             {url && (
               <NavLink to={url}>
-                <button className="bg-slate-800 rounded-md px-3 py-2 hover:bg-slate-700">
-                  <TbWorld className="w-5 h-5" />
+                <button className="rounded-md bg-slate-800 px-3 py-2 hover:bg-slate-700">
+                  <TbWorld className="h-5 w-5" />
                 </button>
               </NavLink>
             )}
             <NavLink to={gitUrl}>
-              <button className="bg-white text-slate-900 rounded-md px-3 py-2 hover:bg-slate-200">
-                <FaGithub className="w-5 h-5" />
+              <button className="rounded-md bg-white px-3 py-2 text-slate-900 hover:bg-slate-200">
+                <FaGithub className="h-5 w-5" />
               </button>
             </NavLink>
           </div>
