@@ -25,7 +25,13 @@ const GameBoard = () => {
     }
   };
 
-  const handlePlayAgain = () => {};
+  const handlePlayAgain = () => {
+    setBoard(
+      Array.from({ length: 6 }, () => Array.from({ length: 7 }, () => "")),
+    );
+    setWinner(null);
+    setCurrentPlayer("red");
+  };
   return (
     <>
       <div className="mx-auto grid w-fit grid-cols-7 rounded-lg bg-white p-4 pb-10">
