@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Cell from "../Cell";
+import Piece from "../Piece";
 
 const GameBoard = () => {
   const [board, setBoard] = useState<string[][]>(
@@ -21,15 +22,27 @@ const GameBoard = () => {
 
   return (
     <div className="grid grid-cols-7 bg-white p-4 rounded-lg mx-auto w-fit">
-      {Array.from({ length: 6 }).map((_, indexY) =>
-        Array.from({ length: 7 }).map((_, indexX) => (
+      {board.map((row, indexY) =>
+        row.map((_, indexX) => (
           <Cell
             key={`${indexY}-${indexX}`}
-            filled={board[indexY][indexX] as "red" | "yellow" | ""}
+            row={indexY}
             column={indexX}
             handleClick={handleClick}
           />
         )),
+      )}
+      {board.map((row, indexY) =>
+        row.map((cell, indexX) =>
+          cell ? (
+            <Piece
+              key={`piece-${indexY}-${indexX}`}
+              color={cell as "red" | "yellow"}
+              row={indexY}
+              column={indexX}
+            />
+          ) : null,
+        ),
       )}
     </div>
   );
