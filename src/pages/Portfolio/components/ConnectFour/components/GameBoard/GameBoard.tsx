@@ -3,6 +3,7 @@ import Cell from "../Cell";
 import Piece from "../Piece";
 import checkWin from "./utils/checkWin";
 import GameOverModal from "../GameOverModal";
+import GameTurnModal from "../GameTurnModal";
 
 const GameBoard = () => {
   const [board, setBoard] = useState<string[][]>(
@@ -32,6 +33,7 @@ const GameBoard = () => {
     setWinner(null);
     setCurrentPlayer("red");
   };
+
   return (
     <>
       <div className="mx-auto grid w-fit grid-cols-7 rounded-lg bg-white p-4 pb-10">
@@ -58,8 +60,10 @@ const GameBoard = () => {
           ),
         )}
       </div>
-      {winner && (
+      {winner ? (
         <GameOverModal winner={winner} handlePlayAgain={handlePlayAgain} />
+      ) : (
+        <GameTurnModal player="red" timer={30} />
       )}
     </>
   );
