@@ -4,6 +4,7 @@ import Piece from "../Piece";
 import checkWin from "./utils/checkWin";
 import GameOverModal from "../GameOverModal";
 import GameTurnModal from "../GameTurnModal";
+import getValidPosition from "./utils/getValidPosition";
 
 const GameBoard = () => {
   const [board, setBoard] = useState<string[][]>(
@@ -34,6 +35,11 @@ const GameBoard = () => {
     setCurrentPlayer("red");
   };
 
+  const handleTimeOut = () => {
+    const validPosition = getValidPosition(board);
+    handleClick(validPosition[0]);
+  };
+
   return (
     <>
       <div className="mx-auto grid w-fit grid-cols-7 rounded-lg bg-white p-4 pb-10">
@@ -61,9 +67,9 @@ const GameBoard = () => {
         )}
       </div>
       {winner ? (
-        <GameOverModal winner={winner} handlePlayAgain={handlePlayAgain} />
+        <GameOverModal winner={winner} onPlayAgain={handlePlayAgain} />
       ) : (
-        <GameTurnModal player="red" timer={30} />
+        <GameTurnModal player={currentPlayer} onTimeOut={handleTimeOut} />
       )}
     </>
   );
