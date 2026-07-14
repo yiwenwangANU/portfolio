@@ -7,7 +7,7 @@ interface Props {
 }
 const ScoreBoard = ({ player, score }: Props) => {
   return (
-    <div className="flex h-40 w-32 flex-col items-center rounded-xl bg-white font-space-grotesk font-bold text-black">
+    <div className="flex h-40 w-32 flex-col items-center rounded-xl bg-white font-space-grotesk font-bold uppercase text-black">
       {player === "red" ? (
         <PlayerRed className="-translate-y-8" />
       ) : (

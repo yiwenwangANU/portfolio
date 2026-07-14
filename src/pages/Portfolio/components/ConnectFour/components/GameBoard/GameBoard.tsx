@@ -1,37 +1,37 @@
-import Cell from "../Cell";
-import Piece from "../Piece";
+import Column from "./components/Column";
 
 interface Props {
   board: string[][];
+  currentPlayer: "red" | "yellow";
+  hoveredColumn: number | null;
   handleClick: (col: number) => void;
+  handleHover: (col: number | null) => void;
 }
-const GameBoard = ({ board, handleClick }: Props) => {
+const GameBoard = ({
+  board,
+  currentPlayer,
+  hoveredColumn,
+  handleClick,
+  handleHover,
+}: Props) => {
+  const columns = board[0].length;
+
   return (
-    <div>
-      <div className="mx-auto grid w-fit grid-cols-7 rounded-lg bg-white p-4 pb-10">
-        {board.map((row, indexY) =>
-          row.map((_, indexX) => (
-            <Cell
-              key={`${indexY}-${indexX}`}
-              row={indexY}
-              column={indexX}
-              handleClick={handleClick}
-            />
-          )),
-        )}
-        {board.map((row, indexY) =>
-          row.map((cell, indexX) =>
-            cell ? (
-              <Piece
-                key={`piece-${indexY}-${indexX}`}
-                color={cell as "red" | "yellow"}
-                row={indexY}
-                column={indexX}
-              />
-            ) : null,
-          ),
-        )}
-      </div>
+    <div
+      className="mx-auto grid w-fit grid-cols-7 rounded-lg bg-white p-4 pb-10"
+      onMouseLeave={() => handleHover(null)}
+    >
+      {Array.from({ length: columns }, (_, col) => (
+        <Column
+          key={col}
+          column={col}
+          cells={board.map((row) => row[col])}
+          currentPlayer={currentPlayer}
+          hoveredColumn={hoveredColumn}
+          handleClick={handleClick}
+          handleHover={handleHover}
+        />
+      ))}
     </div>
   );
 };

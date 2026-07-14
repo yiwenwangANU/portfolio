@@ -1,11 +1,11 @@
 import { useState } from "react";
 import GameBoard from "./components/GameBoard";
 import ScoreBoard from "./components/ScoreBoard";
-import TopBar from "./TopBar";
+import TopBar from "./components/TopBar";
 import GameOverModal from "./components/GameOverModal";
 import GameTurnModal from "./components/GameTurnModal";
-import checkWin from "./components/GameBoard/utils/checkWin";
-import getValidPosition from "./components/GameBoard/utils/getValidPosition";
+import checkWin from "./utils/checkWin";
+import getValidPosition from "./utils/getValidPosition";
 
 const INITIAL_SCORE = {
   red: 0,
@@ -20,6 +20,7 @@ const ConnectFour = () => {
   const [board, setBoard] = useState<string[][]>(
     Array.from({ length: 6 }, () => Array.from({ length: 7 }, () => "")),
   );
+  const [hoveredColumn, setHoveredColumn] = useState<number | null>(null);
 
   const handleClick = (column: number) => {
     if (winner) return;
@@ -37,6 +38,10 @@ const ConnectFour = () => {
         break;
       }
     }
+  };
+
+  const handleHover = (column: number | null) => {
+    setHoveredColumn(column);
   };
 
   const handleWin = (winner: "red" | "yellow") => {
@@ -60,7 +65,13 @@ const ConnectFour = () => {
       <TopBar />
       <div className="flex items-center gap-5">
         <ScoreBoard player="red" score={score.red} />
-        <GameBoard handleClick={handleClick} board={board} />
+        <GameBoard
+          handleClick={handleClick}
+          handleHover={handleHover}
+          board={board}
+          currentPlayer={currentPlayer}
+          hoveredColumn={hoveredColumn}
+        />
         <ScoreBoard player="yellow" score={score.yellow} />
       </div>
       {winner ? (

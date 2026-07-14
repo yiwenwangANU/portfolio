@@ -1,4 +1,4 @@
-import TimerIcon from "@/pages/Portfolio/assets/TimerIcon";
+import TimerIcon from "./assets/TimerIcon";
 import { useEffect, useEffectEvent, useState } from "react";
 
 const TIME = 30;
