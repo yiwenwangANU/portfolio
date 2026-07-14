@@ -34,11 +34,11 @@ const GameTurnModal = ({ player, onTimeOut }: Props) => {
   }, [player]);
 
   return (
-    <div className="relative mx-auto w-fit -translate-y-10">
+    <div className="relative mx-auto w-fit -translate-y-10 font-space-grotesk font-bold">
       <TimerIcon className={`${modal_bg}`} />
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-white">
-        <p className="text-sm font-bold uppercase">{player}&apos;S TURN</p>
-        <p className="text-6xl font-black leading-none">{timer}s</p>
+        <p className="text-sm uppercase">{player}&apos;S TURN</p>
+        <p className="text-6xl leading-none">{timer}s</p>
       </div>
     </div>
   );
