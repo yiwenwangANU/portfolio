@@ -8,7 +8,7 @@ interface Props {
   currentPlayer: "red" | "yellow";
   hoveredColumn: number | null;
   handleClick: (column: number) => void;
-  handleHover: (column: number | null) => void;
+  onHover: (column: number | null) => void;
 }
 
 const Column = ({
@@ -17,7 +17,7 @@ const Column = ({
   currentPlayer,
   hoveredColumn,
   handleClick,
-  handleHover,
+  onHover,
 }: Props) => {
   return (
     <div className="contents">
@@ -32,7 +32,7 @@ const Column = ({
           row={row}
           column={column}
           handleClick={handleClick}
-          handleHover={handleHover}
+          onHover={onHover}
         />
       ))}
       {cells.map((cell, row) =>

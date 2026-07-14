@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ScoreBoard from "./components/ScoreBoard";
-import MainArea from "./MainArea";
+import MainArea from "./components/MainArea";
 
 const INITIAL_SCORE = {
   red: 0,

@@ -1,15 +1,17 @@
 import { useState } from "react";
-import GameBoard from "../components/GameBoard";
-import GameOverModal from "../components/GameOverModal";
-import GameTurnModal from "../components/GameTurnModal";
-import TopBar from "../components/TopBar";
-import checkWin from "../utils/checkWin";
-import getValidPosition from "../utils/getValidPosition";
+import GameBoard from "./components/GameBoard";
+import GameOverModal from "./components/GameOverModal";
+import GameTurnModal from "./components/GameTurnModal";
+import TopBar from "./components/TopBar";
+import checkWin from "../../utils/checkWin";
+import getValidPosition from "../../utils/getValidPosition";
+import GameStartModal from "./components/GameStartModal";
 
 interface Props {
   handleWin: (winner: "red" | "yellow") => void;
 }
 const MainArea = ({ handleWin }: Props) => {
+  const [started, setStarted] = useState<boolean>(false);
   const [winner, setWinner] = useState<"red" | "yellow" | null>(null);
   const [currentPlayer, setCurrentPlayer] = useState<"red" | "yellow">("red");
 
@@ -18,8 +20,11 @@ const MainArea = ({ handleWin }: Props) => {
   );
   const [hoveredColumn, setHoveredColumn] = useState<number | null>(null);
 
+  const handleGameStart = () => {
+    setStarted(true);
+  };
   const handleClick = (column: number) => {
-    if (winner) return;
+    if (winner || !started) return;
     for (let row = 5; row >= 0; row--) {
       if (board[row][column] === "") {
         const newBoard = board.map((r) => [...r]);
@@ -36,6 +41,7 @@ const MainArea = ({ handleWin }: Props) => {
     }
   };
   const handleHover = (column: number | null) => {
+    if (!started) return;
     setHoveredColumn(column);
   };
 
@@ -53,15 +59,17 @@ const MainArea = ({ handleWin }: Props) => {
   };
   return (
     <div>
-      <TopBar handlePlayAgain={handlePlayAgain} />
+      <TopBar onPlayAgain={handlePlayAgain} />
       <GameBoard
         handleClick={handleClick}
-        handleHover={handleHover}
+        onHover={handleHover}
         board={board}
         currentPlayer={currentPlayer}
         hoveredColumn={hoveredColumn}
       />
-      {winner ? (
+      {!started ? (
+        <GameStartModal onGameStart={handleGameStart} />
+      ) : winner ? (
         <GameOverModal winner={winner} onPlayAgain={handlePlayAgain} />
       ) : (
         <GameTurnModal player={currentPlayer} onTimeOut={handleTimeOut} />

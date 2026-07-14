@@ -5,21 +5,21 @@ interface Props {
   currentPlayer: "red" | "yellow";
   hoveredColumn: number | null;
   handleClick: (col: number) => void;
-  handleHover: (col: number | null) => void;
+  onHover: (col: number | null) => void;
 }
 const GameBoard = ({
   board,
   currentPlayer,
   hoveredColumn,
   handleClick,
-  handleHover,
+  onHover,
 }: Props) => {
   const columns = board[0].length;
 
   return (
     <div
       className="mx-auto grid w-fit grid-cols-7 rounded-lg bg-white p-4 pb-10"
-      onMouseLeave={() => handleHover(null)}
+      onMouseLeave={() => onHover(null)}
     >
       {Array.from({ length: columns }, (_, col) => (
         <Column
@@ -29,7 +29,7 @@ const GameBoard = ({
           currentPlayer={currentPlayer}
           hoveredColumn={hoveredColumn}
           handleClick={handleClick}
-          handleHover={handleHover}
+          onHover={onHover}
         />
       ))}
     </div>
